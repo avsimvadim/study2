@@ -1,7 +1,6 @@
-package ua.artcode.testio.model;
+package spring.testio.model;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "courses")

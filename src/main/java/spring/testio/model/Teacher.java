@@ -1,4 +1,4 @@
-package ua.artcode.testio.model;
+package spring.testio.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

@@ -1,7 +1,7 @@
-package ua.artcode.testio.test;
+package spring.testio.test;
 
-import ua.artcode.testio.model.Student;
-import ua.artcode.testio.service.StudentType;
+import spring.testio.model.Student;
+import spring.testio.service.StudentType;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

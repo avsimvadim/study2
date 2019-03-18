@@ -10,7 +10,7 @@
             Persistence unit for the JPA tutorial of the Hibernate Getting Started Guide
         </description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>ua.artcode.testio.model.Student</class>
+        <class>spring.testio.model.Student</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
             <!--data base must be created before init persistence.xml -->

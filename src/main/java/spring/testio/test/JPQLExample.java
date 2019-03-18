@@ -1,4 +1,4 @@
-package ua.artcode.testio.test;
+package spring.testio.test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

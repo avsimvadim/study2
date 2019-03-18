@@ -1,4 +1,4 @@
-package ua.artcode.testio.model;
+package spring.testio.model;
 
 import org.hibernate.annotations.GenericGenerator;
 

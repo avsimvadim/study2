@@ -1,4 +1,4 @@
-package ua.artcode.testio.service;
+package spring.testio.service;
 
 public enum StudentType {
     // name
