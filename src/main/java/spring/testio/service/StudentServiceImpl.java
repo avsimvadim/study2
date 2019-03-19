@@ -1,11 +1,15 @@
 package spring.testio.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import spring.testio.dao.StudentDao;
 import spring.testio.exception.NoStudentFoundEsception;
 import spring.testio.model.Student;
 
+@Component
 public class StudentServiceImpl implements StudentService{
 
+    @Autowired
     private StudentDao studentDao;
 
     @Override

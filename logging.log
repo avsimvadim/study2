@@ -26,3 +26,59 @@
 2019-03-18 21:21:17 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2019-03-18 21:21:17 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62d363ab] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2019-03-18 21:21:18 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-03-19 13:10:54 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Tue Mar 19 13:10:54 EET 2019]; root of context hierarchy
+2019-03-19 13:10:54 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-03-19 13:24:58 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Tue Mar 19 13:24:58 EET 2019]; root of context hierarchy
+2019-03-19 13:24:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-03-19 13:24:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-03-19 13:24:59 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-03-19 13:24:59 WARN  ClassPathXmlApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [orm-spring-context.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [orm-spring-context.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'driverClassName' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [com.mysql.jdbc.driver]
+2019-03-19 13:32:29 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Tue Mar 19 13:32:29 EET 2019]; root of context hierarchy
+2019-03-19 13:32:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-03-19 13:32:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-03-19 13:32:30 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-03-19 13:32:30 WARN  ClassPathXmlApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [orm-spring-context.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [orm-spring-context.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'driverClassName' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [com.mysql.jdbc.driver]
+2019-03-19 13:36:34 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Tue Mar 19 13:36:34 EET 2019]; root of context hierarchy
+2019-03-19 13:36:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-03-19 13:36:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-03-19 13:36:34 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-03-19 13:36:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-03-19 13:36:35 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-19 13:36:35 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-19 13:36:35 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2019-03-19 13:36:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-03-19 13:36:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-19 13:36:36 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-03-19 13:36:37 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-03-19 13:36:51 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Tue Mar 19 13:36:51 EET 2019]; root of context hierarchy
+2019-03-19 13:36:51 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-03-19 13:36:52 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-03-19 13:36:52 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-03-19 13:36:52 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-03-19 13:36:52 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-19 13:36:52 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-19 13:36:52 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2019-03-19 13:36:52 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-03-19 13:36:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-19 13:36:54 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-03-19 13:36:55 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-03-19 13:37:36 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Tue Mar 19 13:37:36 EET 2019]; root of context hierarchy
+2019-03-19 13:37:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-03-19 13:37:37 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-03-19 13:37:37 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-03-19 13:37:37 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-03-19 13:37:37 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-19 13:37:37 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-19 13:37:37 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2019-03-19 13:37:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-03-19 13:37:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-19 13:37:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-03-19 13:37:40 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory

@@ -1,5 +1,7 @@
 package spring.testio.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import spring.testio.model.Student;
 
 import javax.persistence.EntityManager;
@@ -7,8 +9,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import java.util.List;
 
+@Component
 public class StudentDaoImpl implements StudentDao {
 
+    @Autowired
     private EntityManagerFactory entityManagerFactory;
 
     @Override
