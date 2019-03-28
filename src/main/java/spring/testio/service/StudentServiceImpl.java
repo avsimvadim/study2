@@ -2,9 +2,13 @@ package spring.testio.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import spring.testio.dao.StudentDao;
 import spring.testio.exception.NoStudentFoundEsception;
+import spring.testio.exception.RegisterException;
 import spring.testio.model.Student;
+
+import java.util.List;
 
 @Component
 public class StudentServiceImpl implements StudentService{
@@ -31,5 +35,16 @@ public class StudentServiceImpl implements StudentService{
             throw new NoStudentFoundEsception("no student with login" + id);
         }
         return student;
+    }
+
+    @Override
+    public Student register(Student newStudent) throws RegisterException {
+        //validation
+        return studentDao.create(newStudent);
+    }
+
+    @Override
+    public List<Student> getAll(int start, int length) {
+        return studentDao.getAll(start, length);
     }
 }

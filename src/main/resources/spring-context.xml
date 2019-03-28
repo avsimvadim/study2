@@ -9,9 +9,12 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
+
+    <tx:annotation-driven/>
+    <!--FOR ASPECT ANNOTATIONS-->
     <context:annotation-config/>
     <context:component-scan base-package="spring.testio"/>
-
-    <!--get properties from app.properties-->
+    <!-- get properties from app.properties-->
     <import resource="orm-spring-context.xml"/>
+
 </beans>
