@@ -9,5 +9,8 @@
         <module name="study2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="VadymTahiievServlets" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
