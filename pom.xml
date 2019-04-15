@@ -7,6 +7,9 @@
     <groupId>artcode</groupId>
     <artifactId>study2</artifactId>
     <version>1.0</version>
+    <modules>
+        <module>SoapClient</module>
+    </modules>
 
     <dependencies>
 
@@ -103,7 +106,7 @@
 
     </dependencies>
 
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <build>
         <finalName>testio</finalName>
