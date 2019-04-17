@@ -12,5 +12,7 @@ public class RunSoapServer {
         ApplicationContext appCon = new ClassPathXmlApplicationContext("spring-context.xml");
         StudentService studentService = appCon.getBean(StudentService.class);
         Endpoint.publish("http://192.168.1.129:9999/soap/student", new StudentEndpointImpl(studentService));
+        //wsimport -keep http://192.168.1.129:9999/soap/student?wsdl
+        //wsimport -keep -wsdllocation /META-INF/wsdl/MyService.wsdl
     }
 }

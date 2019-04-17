@@ -10,6 +10,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="efse" target="1.8" />
+      <module name="SoapClient" target="1.8" />
       <module name="VadymTahiievServlets" target="1.8" />
     </bytecodeTargetLevel>
   </component>
