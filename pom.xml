@@ -11,6 +11,7 @@
         <module>SoapClient</module>
         <module>efse</module>
         <module>SoapClient</module>
+        <module>SoapClient</module>
     </modules>
 
 
