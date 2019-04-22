@@ -29,7 +29,7 @@ public interface StudentEndpoint {
      * 
      * @param arg0
      * @return
-     *     returns spring.testio.soap.endpoint.Student
+     *     returns spring.testio.soap.endpoint.StudentDTO
      * @throws RegisterException_Exception
      */
     @WebMethod
@@ -37,9 +37,9 @@ public interface StudentEndpoint {
     @Action(input = "http://endpoint.soap.testio.spring/StudentEndpoint/registerRequest", output = "http://endpoint.soap.testio.spring/StudentEndpoint/registerResponse", fault = {
         @FaultAction(className = RegisterException_Exception.class, value = "http://endpoint.soap.testio.spring/StudentEndpoint/register/Fault/RegisterException")
     })
-    public Student register(
+    public StudentDTO register(
         @WebParam(name = "arg0", partName = "arg0")
-        Student arg0)
+        StudentDTO arg0)
         throws RegisterException_Exception
     ;
 
@@ -47,7 +47,7 @@ public interface StudentEndpoint {
      * 
      * @param arg0
      * @return
-     *     returns spring.testio.soap.endpoint.Student
+     *     returns spring.testio.soap.endpoint.StudentDTO
      * @throws NoStudentFoundEsception_Exception
      */
     @WebMethod
@@ -55,7 +55,7 @@ public interface StudentEndpoint {
     @Action(input = "http://endpoint.soap.testio.spring/StudentEndpoint/getStudentInfoRequest", output = "http://endpoint.soap.testio.spring/StudentEndpoint/getStudentInfoResponse", fault = {
         @FaultAction(className = NoStudentFoundEsception_Exception.class, value = "http://endpoint.soap.testio.spring/StudentEndpoint/getStudentInfo/Fault/NoStudentFoundEsception")
     })
-    public Student getStudentInfo(
+    public StudentDTO getStudentInfo(
         @WebParam(name = "arg0", partName = "arg0")
         int arg0)
         throws NoStudentFoundEsception_Exception
@@ -65,7 +65,7 @@ public interface StudentEndpoint {
      * 
      * @param arg0
      * @return
-     *     returns spring.testio.soap.endpoint.Student
+     *     returns spring.testio.soap.endpoint.StudentDTO
      * @throws NoStudentFoundEsception_Exception
      */
     @WebMethod
@@ -73,10 +73,26 @@ public interface StudentEndpoint {
     @Action(input = "http://endpoint.soap.testio.spring/StudentEndpoint/loginRequest", output = "http://endpoint.soap.testio.spring/StudentEndpoint/loginResponse", fault = {
         @FaultAction(className = NoStudentFoundEsception_Exception.class, value = "http://endpoint.soap.testio.spring/StudentEndpoint/login/Fault/NoStudentFoundEsception")
     })
-    public Student login(
+    public StudentDTO login(
         @WebParam(name = "arg0", partName = "arg0")
         String arg0)
         throws NoStudentFoundEsception_Exception
     ;
+
+    /**
+     * 
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns spring.testio.soap.endpoint.StudentList
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://endpoint.soap.testio.spring/StudentEndpoint/getAllRequest", output = "http://endpoint.soap.testio.spring/StudentEndpoint/getAllResponse")
+    public StudentList getAll(
+        @WebParam(name = "arg0", partName = "arg0")
+        int arg0,
+        @WebParam(name = "arg1", partName = "arg1")
+        int arg1);
 
 }

@@ -24,14 +24,24 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _Student_QNAME = new QName("http://endpoint.soap.testio.spring/", "student");
     private final static QName _NoStudentFoundEsception_QNAME = new QName("http://endpoint.soap.testio.spring/", "NoStudentFoundEsception");
     private final static QName _RegisterException_QNAME = new QName("http://endpoint.soap.testio.spring/", "RegisterException");
+    private final static QName _StudentsList_QNAME = new QName("http://endpoint.soap.testio.spring/", "studentsList");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: spring.testio.soap.endpoint
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link StudentDTO }
+     * 
+     */
+    public StudentDTO createStudentDTO() {
+        return new StudentDTO();
     }
 
     /**
@@ -51,11 +61,20 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Student }
+     * Create an instance of {@link StudentList }
      * 
      */
-    public Student createStudent() {
-        return new Student();
+    public StudentList createStudentList() {
+        return new StudentList();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link StudentDTO }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://endpoint.soap.testio.spring/", name = "student")
+    public JAXBElement<StudentDTO> createStudent(StudentDTO value) {
+        return new JAXBElement<StudentDTO>(_Student_QNAME, StudentDTO.class, null, value);
     }
 
     /**
@@ -74,6 +93,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://endpoint.soap.testio.spring/", name = "RegisterException")
     public JAXBElement<RegisterException> createRegisterException(RegisterException value) {
         return new JAXBElement<RegisterException>(_RegisterException_QNAME, RegisterException.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link StudentList }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://endpoint.soap.testio.spring/", name = "studentsList")
+    public JAXBElement<StudentList> createStudentsList(StudentList value) {
+        return new JAXBElement<StudentList>(_StudentsList_QNAME, StudentList.class, null, value);
     }
 
 }

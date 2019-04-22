@@ -78,3 +78,67 @@
 2019-04-17 21:06:07 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2019-04-17 21:06:08 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
 2019-04-17 21:06:08 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-20 13:09:01 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d012ddd: startup date [Sat Apr 20 13:09:01 EEST 2019]; root of context hierarchy
+2019-04-20 13:09:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-04-20 13:09:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-04-20 13:09:02 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-04-20 13:09:03 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-04-20 13:09:03 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-20 13:09:03 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-20 13:09:03 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2019-04-20 13:09:03 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-04-20 13:09:03 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2019-04-20 13:09:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2019-04-20 13:09:04 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-20 13:09:05 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2019-04-20 13:09:05 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-20 18:28:44 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d012ddd: startup date [Sat Apr 20 18:28:44 EEST 2019]; root of context hierarchy
+2019-04-20 18:28:45 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-04-20 18:28:45 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-04-20 18:28:45 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-04-20 18:28:46 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-04-20 18:28:47 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-20 18:28:47 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-20 18:28:47 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2019-04-20 18:28:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-04-20 18:28:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2019-04-20 18:28:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2019-04-20 18:28:48 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-20 18:28:49 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2019-04-20 18:28:49 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-21 16:02:54 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d012ddd: startup date [Sun Apr 21 16:02:54 EEST 2019]; root of context hierarchy
+2019-04-21 16:02:54 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-04-21 16:02:55 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-04-21 16:02:55 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-04-21 16:02:56 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-04-21 16:02:56 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-21 16:02:56 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-21 16:02:56 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2019-04-21 16:02:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-04-21 16:02:56 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2019-04-21 16:02:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2019-04-21 16:02:57 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-21 16:02:58 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2019-04-21 16:02:58 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-21 16:42:55 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d012ddd: startup date [Sun Apr 21 16:42:55 EEST 2019]; root of context hierarchy
+2019-04-21 16:42:55 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-04-21 16:42:55 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2019-04-21 16:42:55 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2019-04-21 16:42:56 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2019-04-21 16:42:56 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-21 16:42:56 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-21 16:42:56 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2019-04-21 16:42:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-04-21 16:42:56 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2019-04-21 16:42:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2019-04-21 16:42:58 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-21 16:42:58 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2019-04-21 16:42:59 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory

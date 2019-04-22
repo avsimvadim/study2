@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SoapClient" />
+        <module name="study2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="efse" target="1.8" />
+      <module name="RestJerseyServer" target="1.8" />
       <module name="VadymTahiievServlets" target="1.8" />
     </bytecodeTargetLevel>
   </component>

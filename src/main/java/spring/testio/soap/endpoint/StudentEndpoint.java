@@ -1,5 +1,7 @@
 package spring.testio.soap.endpoint;
 
+import spring.testio.dto.StudentDTO;
+import spring.testio.dto.StudentList;
 import spring.testio.exception.NoStudentFoundEsception;
 import spring.testio.exception.RegisterException;
 import spring.testio.model.Student;
@@ -15,12 +17,14 @@ import java.util.List;
 public interface StudentEndpoint {
 
     @WebMethod
-    Student login(String login) throws NoStudentFoundEsception;
+    StudentDTO login(String login) throws NoStudentFoundEsception;
 
     @WebMethod
-    Student getStudentInfo(int id) throws NoStudentFoundEsception;
+    StudentDTO getStudentInfo(int id) throws NoStudentFoundEsception;
 
     @WebMethod
-    Student register(Student newStudent) throws RegisterException;
+    StudentDTO register(StudentDTO newStudent) throws RegisterException;
 
+    @WebMethod
+    StudentList getAll(int start, int length);
 }

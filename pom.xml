@@ -9,9 +9,9 @@
     <version>1.0</version>
     <modules>
         <module>SoapClient</module>
-        <module>efse</module>
         <module>SoapClient</module>
         <module>SoapClient</module>
+        <module>RestJerseyServer</module>
     </modules>
 
 
@@ -102,9 +102,14 @@
             <version>1.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>1.19</version>
+        </dependency>
     </dependencies>
 
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
 
 
     <build>

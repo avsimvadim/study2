@@ -5,10 +5,10 @@
 </xsd:schema>
 </types>
 <message name="register">
-<part name="arg0" type="tns:student"></part>
+<part name="arg0" type="tns:studentDTO"></part>
 </message>
 <message name="registerResponse">
-<part name="return" type="tns:student"></part>
+<part name="return" type="tns:studentDTO"></part>
 </message>
 <message name="RegisterException">
 <part name="fault" element="tns:RegisterException"></part>
@@ -17,7 +17,7 @@
 <part name="arg0" type="xsd:int"></part>
 </message>
 <message name="getStudentInfoResponse">
-<part name="return" type="tns:student"></part>
+<part name="return" type="tns:studentDTO"></part>
 </message>
 <message name="NoStudentFoundEsception">
 <part name="fault" element="tns:NoStudentFoundEsception"></part>
@@ -26,7 +26,14 @@
 <part name="arg0" type="xsd:string"></part>
 </message>
 <message name="loginResponse">
-<part name="return" type="tns:student"></part>
+<part name="return" type="tns:studentDTO"></part>
+</message>
+<message name="getAll">
+<part name="arg0" type="xsd:int"></part>
+<part name="arg1" type="xsd:int"></part>
+</message>
+<message name="getAllResponse">
+<part name="return" type="tns:studentList"></part>
 </message>
 <portType name="StudentEndpoint">
 <operation name="register">
@@ -43,6 +50,10 @@
 <input wsam:Action="http://endpoint.soap.testio.spring/StudentEndpoint/loginRequest" message="tns:login"></input>
 <output wsam:Action="http://endpoint.soap.testio.spring/StudentEndpoint/loginResponse" message="tns:loginResponse"></output>
 <fault message="tns:NoStudentFoundEsception" name="NoStudentFoundEsception" wsam:Action="http://endpoint.soap.testio.spring/StudentEndpoint/login/Fault/NoStudentFoundEsception"></fault>
+</operation>
+<operation name="getAll" parameterOrder="arg0 arg1">
+<input wsam:Action="http://endpoint.soap.testio.spring/StudentEndpoint/getAllRequest" message="tns:getAll"></input>
+<output wsam:Action="http://endpoint.soap.testio.spring/StudentEndpoint/getAllResponse" message="tns:getAllResponse"></output>
 </operation>
 </portType>
 <binding name="StudentEndpointImplPortBinding" type="tns:StudentEndpoint">
@@ -82,6 +93,15 @@
 <fault name="NoStudentFoundEsception">
 <soap:fault name="NoStudentFoundEsception" use="literal"></soap:fault>
 </fault>
+</operation>
+<operation name="getAll">
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal" namespace="http://endpoint.soap.testio.spring/"></soap:body>
+</input>
+<output>
+<soap:body use="literal" namespace="http://endpoint.soap.testio.spring/"></soap:body>
+</output>
 </operation>
 </binding>
 <service name="StudentEndpointImplService">
